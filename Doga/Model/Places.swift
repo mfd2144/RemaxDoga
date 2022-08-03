@@ -1,0 +1,76 @@
+//
+//  Places.swift
+//  Doga
+//
+//  Created by Mehmet fatih DOGAN on 7.06.2022.
+//
+
+import Foundation
+
+enum Places: String, Codable, CaseIterable, Identifiable {
+    case AGACDERE_MAHALLESI,
+         AGVA_MERKEZ_MAHALLESI,
+         AHMETLI_MAHALLESI,
+         AKCAKESE_MAHALLESI,
+         ALACALI_MAHALLESI,
+         AVCIKORU_MAHALLESI,
+         BALIBEY_MAHALLESI,
+         BICKIDERE_MAHALLESI,
+         BOZGOCA_MAHALLESI,
+         BUCAKLI_MAHALLESI,
+         CATAKLI_MAHALLESI,
+         CAVUS_MAHALLESI,
+         CAYIRBASI_MAHALLESI,
+         CELEBI_MAHALLESI,
+         CENGILLI_MAHALLESI,
+         DARLIK_MAHALLESI,
+         DEGIRMENCAYIRI_MAHALLESI,
+         DOGANCILI_MAHALLESI,
+         ERENLER_MAHALLESI,
+         ESENCELI_MAHALLESI,
+         GEREDELI_MAHALLESI,
+         GOCE_MAHALLESI,
+         GOKMASLI_MAHALLESI,
+         GOKSU_MAHALLESI,
+         HACI_KASIM_MAHALLESI,
+         HACILLI_MAHALLESI,
+         HASANLI_MAHALLESI,
+         IMRENDERE_MAHALLESI,
+         IMRENLI_MAHALLESI,
+         ISAKOY_MAHALLESI,
+         KABAKOZ_MAHALLESI,
+         KADIKOY_MAHALLESI,
+         KALEM_MAHALLESI,
+         KARABEYLI_MAHALLESI,
+         KARACAKOY_MAHALLESI,
+         KARAKIRAZ_MAHALLESI,
+         KARAMANDERE_MAHALLESI,
+         KERVANSARAY_MAHALLESI,
+         KIZILCA_MAHALLESI,
+         KORUCU_MAHALLESI,
+         KOMURLUK_MAHALLESI,
+         KUMBABA_MAHALLESI,
+         KURFALLI_MAHALLESI,
+         KURNA_MAHALLESI,
+         MESRUTIYET_MAHALLESI,
+         ORUCOGLU_MAHALLESI,
+         OSMANKOY_MAHALLESI,
+         OVACIK_MAHALLESI,
+         SAHILKOY_MAHALLESI,
+         SATMAZLI_MAHALLESI,
+         SOFULAR_MAHALLESI,
+         SOGULLU_MAHALLESI,
+         SORTULLU_MAHALLESI,
+         SUAYIPLI_MAHALLESI,
+         TEKE_MAHALLESI,
+         ULUPELIT_MAHALLESI,
+         UVEZLI_MAHALLESI,
+         YAKA_MAHALLESI,
+         YAYLALI_MAHALLESI,
+         YAZIMANAYIR_MAHALLESI,
+         YENIKOY_MAHALLESI,
+         YESILVADI_MAHALLESI
+    var name: String { self.rawValue.capitalizingFirstLetter() }
+    //Identifiable so we can use in ForEach
+    var id: String { self.rawValue.capitalizingFirstLetter() }
+}
